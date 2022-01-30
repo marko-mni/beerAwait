@@ -1,0 +1,9 @@
+# /
+/default_value
+/Pods
+/*.xcworkspace
+/build
+/DerivedData
+/*.xcodeproj/xcuserdata/*.xcuserdatad
+/*.xcodeproj/project.xcworkspace/xcuserdata/*.xcuserdatad
+/.gems

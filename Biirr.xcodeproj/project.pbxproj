@@ -1,0 +1,875 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28CD7F08CB6A3C72A8959E83 /* Pods_Biirr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B110B83AB5575747661E05 /* Pods_Biirr.framework */; };
+		3250A3BD27A6D5F600D62EC7 /* MockBeerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3250A3BC27A6D5F600D62EC7 /* MockBeerService.swift */; };
+		3250A3C127A6D87800D62EC7 /* BeersOverviewViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3250A3C027A6D87800D62EC7 /* BeersOverviewViewModelTests.swift */; };
+		3250A3C727A6DE9700D62EC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 325FFD8027A313A700137A21 /* Assets.xcassets */; };
+		3250A3C927A6DEAE00D62EC7 /* TestAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3250A3C827A6DEAE00D62EC7 /* TestAssets.xcassets */; };
+		325FFD7827A313A500137A21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FFD7727A313A500137A21 /* AppDelegate.swift */; };
+		325FFD7A27A313A500137A21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FFD7927A313A500137A21 /* SceneDelegate.swift */; };
+		325FFD7C27A313A500137A21 /* BeersOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FFD7B27A313A500137A21 /* BeersOverviewViewController.swift */; };
+		325FFD7F27A313A500137A21 /* Beers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 325FFD7D27A313A500137A21 /* Beers.storyboard */; };
+		325FFD8427A313A700137A21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 325FFD8227A313A700137A21 /* LaunchScreen.storyboard */; };
+		325FFD9927A313A700137A21 /* BiirrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FFD9827A313A700137A21 /* BiirrUITests.swift */; };
+		325FFD9B27A313A700137A21 /* BiirrUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FFD9A27A313A700137A21 /* BiirrUITestsLaunchTests.swift */; };
+		325FFDA827A31E4100137A21 /* BeerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FFDA727A31E4100137A21 /* BeerService.swift */; };
+		325FFDAA27A31E7400137A21 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FFDA927A31E7400137A21 /* Beer.swift */; };
+		325FFDAC27A3217500137A21 /* BeersOverviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FFDAB27A3217500137A21 /* BeersOverviewViewModel.swift */; };
+		325FFDB027A42F0500137A21 /* BeerOverviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FFDAE27A42F0500137A21 /* BeerOverviewCell.swift */; };
+		32F9901627A5AA7300B46398 /* Coordinator+Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F9901527A5AA7200B46398 /* Coordinator+Storyboarded.swift */; };
+		32F9901827A5ABD000B46398 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F9901727A5ABD000B46398 /* MainCoordinator.swift */; };
+		32F9901A27A5B20200B46398 /* BeerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F9901927A5B20200B46398 /* BeerDetailsViewController.swift */; };
+		B9FA60206B7444E65D42556A /* Pods_BiirrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051E536DC22D6B057DE5C820 /* Pods_BiirrTests.framework */; };
+		BE4C0723867CAB507913C5D3 /* Pods_Biirr_BiirrUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB4AA5E36AC37DC78C135D1C /* Pods_Biirr_BiirrUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		325FFD8B27A313A700137A21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 325FFD6C27A313A500137A21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 325FFD7327A313A500137A21;
+			remoteInfo = Biirr;
+		};
+		325FFD9527A313A700137A21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 325FFD6C27A313A500137A21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 325FFD7327A313A500137A21;
+			remoteInfo = Biirr;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		051E536DC22D6B057DE5C820 /* Pods_BiirrTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BiirrTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DAB4B3DF3D2CA7AE0273CE7 /* Pods-BiirrTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiirrTests.release.xcconfig"; path = "Target Support Files/Pods-BiirrTests/Pods-BiirrTests.release.xcconfig"; sourceTree = "<group>"; };
+		0DB6250112DEB8AAF4F13A9B /* Pods-Biirr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Biirr.debug.xcconfig"; path = "Target Support Files/Pods-Biirr/Pods-Biirr.debug.xcconfig"; sourceTree = "<group>"; };
+		3250A3BC27A6D5F600D62EC7 /* MockBeerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBeerService.swift; sourceTree = "<group>"; };
+		3250A3C027A6D87800D62EC7 /* BeersOverviewViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersOverviewViewModelTests.swift; sourceTree = "<group>"; };
+		3250A3C827A6DEAE00D62EC7 /* TestAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TestAssets.xcassets; sourceTree = "<group>"; };
+		325FFD7427A313A500137A21 /* Biirr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Biirr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		325FFD7727A313A500137A21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		325FFD7927A313A500137A21 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		325FFD7B27A313A500137A21 /* BeersOverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersOverviewViewController.swift; sourceTree = "<group>"; };
+		325FFD7E27A313A500137A21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Beers.storyboard; sourceTree = "<group>"; };
+		325FFD8027A313A700137A21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		325FFD8327A313A700137A21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		325FFD8527A313A700137A21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		325FFD8A27A313A700137A21 /* BiirrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiirrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		325FFD9427A313A700137A21 /* BiirrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiirrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		325FFD9827A313A700137A21 /* BiirrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiirrUITests.swift; sourceTree = "<group>"; };
+		325FFD9A27A313A700137A21 /* BiirrUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiirrUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		325FFDA727A31E4100137A21 /* BeerService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerService.swift; sourceTree = "<group>"; };
+		325FFDA927A31E7400137A21 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		325FFDAB27A3217500137A21 /* BeersOverviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersOverviewViewModel.swift; sourceTree = "<group>"; };
+		325FFDAE27A42F0500137A21 /* BeerOverviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerOverviewCell.swift; sourceTree = "<group>"; };
+		32F9901527A5AA7200B46398 /* Coordinator+Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coordinator+Storyboarded.swift"; sourceTree = "<group>"; };
+		32F9901727A5ABD000B46398 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		32F9901927A5B20200B46398 /* BeerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailsViewController.swift; sourceTree = "<group>"; };
+		6F3114FCC343C871A7637C4A /* Pods-Biirr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Biirr.release.xcconfig"; path = "Target Support Files/Pods-Biirr/Pods-Biirr.release.xcconfig"; sourceTree = "<group>"; };
+		74EE3E930CE116F8353E97B1 /* Pods-BiirrTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiirrTests.debug.xcconfig"; path = "Target Support Files/Pods-BiirrTests/Pods-BiirrTests.debug.xcconfig"; sourceTree = "<group>"; };
+		88D2F5ECCC1379EFD9B17476 /* Pods-Biirr-BiirrUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Biirr-BiirrUITests.debug.xcconfig"; path = "Target Support Files/Pods-Biirr-BiirrUITests/Pods-Biirr-BiirrUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BB4AA5E36AC37DC78C135D1C /* Pods_Biirr_BiirrUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Biirr_BiirrUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0B110B83AB5575747661E05 /* Pods_Biirr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Biirr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0390C579DF4F655285035D0 /* Pods-Biirr-BiirrUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Biirr-BiirrUITests.release.xcconfig"; path = "Target Support Files/Pods-Biirr-BiirrUITests/Pods-Biirr-BiirrUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		325FFD7127A313A500137A21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28CD7F08CB6A3C72A8959E83 /* Pods_Biirr.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		325FFD8727A313A700137A21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9FA60206B7444E65D42556A /* Pods_BiirrTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		325FFD9127A313A700137A21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE4C0723867CAB507913C5D3 /* Pods_Biirr_BiirrUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BED50A896E5632DD32F939D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0B110B83AB5575747661E05 /* Pods_Biirr.framework */,
+				BB4AA5E36AC37DC78C135D1C /* Pods_Biirr_BiirrUITests.framework */,
+				051E536DC22D6B057DE5C820 /* Pods_BiirrTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3250A3B627A646E500D62EC7 /* beersOverview */ = {
+			isa = PBXGroup;
+			children = (
+				325FFD7B27A313A500137A21 /* BeersOverviewViewController.swift */,
+				325FFDAB27A3217500137A21 /* BeersOverviewViewModel.swift */,
+			);
+			path = beersOverview;
+			sourceTree = "<group>";
+		};
+		3250A3B727A6473D00D62EC7 /* beerDetails */ = {
+			isa = PBXGroup;
+			children = (
+				32F9901927A5B20200B46398 /* BeerDetailsViewController.swift */,
+			);
+			path = beerDetails;
+			sourceTree = "<group>";
+		};
+		3250A3B827A6474A00D62EC7 /* routing */ = {
+			isa = PBXGroup;
+			children = (
+				32F9901527A5AA7200B46398 /* Coordinator+Storyboarded.swift */,
+				32F9901727A5ABD000B46398 /* MainCoordinator.swift */,
+			);
+			path = routing;
+			sourceTree = "<group>";
+		};
+		3250A3B927A6475500D62EC7 /* networking */ = {
+			isa = PBXGroup;
+			children = (
+				325FFDA727A31E4100137A21 /* BeerService.swift */,
+			);
+			path = networking;
+			sourceTree = "<group>";
+		};
+		3250A3BA27A6476100D62EC7 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				325FFDA927A31E7400137A21 /* Beer.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		3250A3BB27A6D5C600D62EC7 /* mocks */ = {
+			isa = PBXGroup;
+			children = (
+				3250A3BC27A6D5F600D62EC7 /* MockBeerService.swift */,
+			);
+			path = mocks;
+			sourceTree = "<group>";
+		};
+		325FFD6B27A313A500137A21 = {
+			isa = PBXGroup;
+			children = (
+				325FFD7627A313A500137A21 /* Biirr */,
+				325FFD8D27A313A700137A21 /* BiirrTests */,
+				325FFD9727A313A700137A21 /* BiirrUITests */,
+				325FFD7527A313A500137A21 /* Products */,
+				BD407FE11286AB65D1AB8F1E /* Pods */,
+				2BED50A896E5632DD32F939D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		325FFD7527A313A500137A21 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				325FFD7427A313A500137A21 /* Biirr.app */,
+				325FFD8A27A313A700137A21 /* BiirrTests.xctest */,
+				325FFD9427A313A700137A21 /* BiirrUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		325FFD7627A313A500137A21 /* Biirr */ = {
+			isa = PBXGroup;
+			children = (
+				325FFD7727A313A500137A21 /* AppDelegate.swift */,
+				325FFD7927A313A500137A21 /* SceneDelegate.swift */,
+				3250A3B627A646E500D62EC7 /* beersOverview */,
+				3250A3BA27A6476100D62EC7 /* model */,
+				3250A3B727A6473D00D62EC7 /* beerDetails */,
+				3250A3B827A6474A00D62EC7 /* routing */,
+				3250A3B927A6475500D62EC7 /* networking */,
+				325FFDAD27A42EE000137A21 /* cell */,
+				3250A3BB27A6D5C600D62EC7 /* mocks */,
+				325FFD7D27A313A500137A21 /* Beers.storyboard */,
+				325FFD8027A313A700137A21 /* Assets.xcassets */,
+				325FFD8227A313A700137A21 /* LaunchScreen.storyboard */,
+				325FFD8527A313A700137A21 /* Info.plist */,
+			);
+			path = Biirr;
+			sourceTree = "<group>";
+		};
+		325FFD8D27A313A700137A21 /* BiirrTests */ = {
+			isa = PBXGroup;
+			children = (
+				3250A3C027A6D87800D62EC7 /* BeersOverviewViewModelTests.swift */,
+				3250A3C827A6DEAE00D62EC7 /* TestAssets.xcassets */,
+			);
+			path = BiirrTests;
+			sourceTree = "<group>";
+		};
+		325FFD9727A313A700137A21 /* BiirrUITests */ = {
+			isa = PBXGroup;
+			children = (
+				325FFD9827A313A700137A21 /* BiirrUITests.swift */,
+				325FFD9A27A313A700137A21 /* BiirrUITestsLaunchTests.swift */,
+			);
+			path = BiirrUITests;
+			sourceTree = "<group>";
+		};
+		325FFDAD27A42EE000137A21 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				325FFDAE27A42F0500137A21 /* BeerOverviewCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		BD407FE11286AB65D1AB8F1E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0DB6250112DEB8AAF4F13A9B /* Pods-Biirr.debug.xcconfig */,
+				6F3114FCC343C871A7637C4A /* Pods-Biirr.release.xcconfig */,
+				88D2F5ECCC1379EFD9B17476 /* Pods-Biirr-BiirrUITests.debug.xcconfig */,
+				F0390C579DF4F655285035D0 /* Pods-Biirr-BiirrUITests.release.xcconfig */,
+				74EE3E930CE116F8353E97B1 /* Pods-BiirrTests.debug.xcconfig */,
+				0DAB4B3DF3D2CA7AE0273CE7 /* Pods-BiirrTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		325FFD7327A313A500137A21 /* Biirr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 325FFD9E27A313A700137A21 /* Build configuration list for PBXNativeTarget "Biirr" */;
+			buildPhases = (
+				A01C51621CAC2CD4D99EB7EE /* [CP] Check Pods Manifest.lock */,
+				325FFD7027A313A500137A21 /* Sources */,
+				325FFD7127A313A500137A21 /* Frameworks */,
+				325FFD7227A313A500137A21 /* Resources */,
+				8B2B96582D4DD198D8BD245A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Biirr;
+			productName = Biirr;
+			productReference = 325FFD7427A313A500137A21 /* Biirr.app */;
+			productType = "com.apple.product-type.application";
+		};
+		325FFD8927A313A700137A21 /* BiirrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 325FFDA127A313A700137A21 /* Build configuration list for PBXNativeTarget "BiirrTests" */;
+			buildPhases = (
+				BBEFB2D4DC3627C47A29E861 /* [CP] Check Pods Manifest.lock */,
+				325FFD8627A313A700137A21 /* Sources */,
+				325FFD8727A313A700137A21 /* Frameworks */,
+				325FFD8827A313A700137A21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				325FFD8C27A313A700137A21 /* PBXTargetDependency */,
+			);
+			name = BiirrTests;
+			productName = BiirrTests;
+			productReference = 325FFD8A27A313A700137A21 /* BiirrTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		325FFD9327A313A700137A21 /* BiirrUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 325FFDA427A313A700137A21 /* Build configuration list for PBXNativeTarget "BiirrUITests" */;
+			buildPhases = (
+				5ACCCBAA3F31AFF07B1D2E87 /* [CP] Check Pods Manifest.lock */,
+				325FFD9027A313A700137A21 /* Sources */,
+				325FFD9127A313A700137A21 /* Frameworks */,
+				325FFD9227A313A700137A21 /* Resources */,
+				E633497F9BCE31CEF8F46ABC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				325FFD9627A313A700137A21 /* PBXTargetDependency */,
+			);
+			name = BiirrUITests;
+			productName = BiirrUITests;
+			productReference = 325FFD9427A313A700137A21 /* BiirrUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		325FFD6C27A313A500137A21 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					325FFD7327A313A500137A21 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					325FFD8927A313A700137A21 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 325FFD7327A313A500137A21;
+					};
+					325FFD9327A313A700137A21 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 325FFD7327A313A500137A21;
+					};
+				};
+			};
+			buildConfigurationList = 325FFD6F27A313A500137A21 /* Build configuration list for PBXProject "Biirr" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 325FFD6B27A313A500137A21;
+			productRefGroup = 325FFD7527A313A500137A21 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				325FFD7327A313A500137A21 /* Biirr */,
+				325FFD8927A313A700137A21 /* BiirrTests */,
+				325FFD9327A313A700137A21 /* BiirrUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		325FFD7227A313A500137A21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				325FFD8427A313A700137A21 /* LaunchScreen.storyboard in Resources */,
+				3250A3C727A6DE9700D62EC7 /* Assets.xcassets in Resources */,
+				325FFD7F27A313A500137A21 /* Beers.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		325FFD8827A313A700137A21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3250A3C927A6DEAE00D62EC7 /* TestAssets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		325FFD9227A313A700137A21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5ACCCBAA3F31AFF07B1D2E87 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Biirr-BiirrUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B2B96582D4DD198D8BD245A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Biirr/Pods-Biirr-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Biirr/Pods-Biirr-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Biirr/Pods-Biirr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A01C51621CAC2CD4D99EB7EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Biirr-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBEFB2D4DC3627C47A29E861 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BiirrTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E633497F9BCE31CEF8F46ABC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Biirr-BiirrUITests/Pods-Biirr-BiirrUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Biirr-BiirrUITests/Pods-Biirr-BiirrUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Biirr-BiirrUITests/Pods-Biirr-BiirrUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		325FFD7027A313A500137A21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32F9901627A5AA7300B46398 /* Coordinator+Storyboarded.swift in Sources */,
+				3250A3BD27A6D5F600D62EC7 /* MockBeerService.swift in Sources */,
+				32F9901A27A5B20200B46398 /* BeerDetailsViewController.swift in Sources */,
+				325FFD7C27A313A500137A21 /* BeersOverviewViewController.swift in Sources */,
+				325FFDA827A31E4100137A21 /* BeerService.swift in Sources */,
+				325FFDAA27A31E7400137A21 /* Beer.swift in Sources */,
+				325FFDB027A42F0500137A21 /* BeerOverviewCell.swift in Sources */,
+				325FFD7827A313A500137A21 /* AppDelegate.swift in Sources */,
+				325FFDAC27A3217500137A21 /* BeersOverviewViewModel.swift in Sources */,
+				32F9901827A5ABD000B46398 /* MainCoordinator.swift in Sources */,
+				325FFD7A27A313A500137A21 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		325FFD8627A313A700137A21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3250A3C127A6D87800D62EC7 /* BeersOverviewViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		325FFD9027A313A700137A21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				325FFD9927A313A700137A21 /* BiirrUITests.swift in Sources */,
+				325FFD9B27A313A700137A21 /* BiirrUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		325FFD8C27A313A700137A21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 325FFD7327A313A500137A21 /* Biirr */;
+			targetProxy = 325FFD8B27A313A700137A21 /* PBXContainerItemProxy */;
+		};
+		325FFD9627A313A700137A21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 325FFD7327A313A500137A21 /* Biirr */;
+			targetProxy = 325FFD9527A313A700137A21 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		325FFD7D27A313A500137A21 /* Beers.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				325FFD7E27A313A500137A21 /* Base */,
+			);
+			name = Beers.storyboard;
+			sourceTree = "<group>";
+		};
+		325FFD8227A313A700137A21 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				325FFD8327A313A700137A21 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		325FFD9C27A313A700137A21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		325FFD9D27A313A700137A21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		325FFD9F27A313A700137A21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DB6250112DEB8AAF4F13A9B /* Pods-Biirr.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8FTE6N75QE;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Biirr/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.markonikolov.Biirr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		325FFDA027A313A700137A21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F3114FCC343C871A7637C4A /* Pods-Biirr.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8FTE6N75QE;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Biirr/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.markonikolov.Biirr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		325FFDA227A313A700137A21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74EE3E930CE116F8353E97B1 /* Pods-BiirrTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8FTE6N75QE;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.markonikolov.BiirrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Biirr.app/Biirr";
+			};
+			name = Debug;
+		};
+		325FFDA327A313A700137A21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DAB4B3DF3D2CA7AE0273CE7 /* Pods-BiirrTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8FTE6N75QE;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.markonikolov.BiirrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Biirr.app/Biirr";
+			};
+			name = Release;
+		};
+		325FFDA527A313A700137A21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88D2F5ECCC1379EFD9B17476 /* Pods-Biirr-BiirrUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8FTE6N75QE;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.markonikolov.BiirrUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Biirr;
+			};
+			name = Debug;
+		};
+		325FFDA627A313A700137A21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0390C579DF4F655285035D0 /* Pods-Biirr-BiirrUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8FTE6N75QE;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.markonikolov.BiirrUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Biirr;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		325FFD6F27A313A500137A21 /* Build configuration list for PBXProject "Biirr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				325FFD9C27A313A700137A21 /* Debug */,
+				325FFD9D27A313A700137A21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		325FFD9E27A313A700137A21 /* Build configuration list for PBXNativeTarget "Biirr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				325FFD9F27A313A700137A21 /* Debug */,
+				325FFDA027A313A700137A21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		325FFDA127A313A700137A21 /* Build configuration list for PBXNativeTarget "BiirrTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				325FFDA227A313A700137A21 /* Debug */,
+				325FFDA327A313A700137A21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		325FFDA427A313A700137A21 /* Build configuration list for PBXNativeTarget "BiirrUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				325FFDA527A313A700137A21 /* Debug */,
+				325FFDA627A313A700137A21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 325FFD6C27A313A500137A21 /* Project object */;
+}
